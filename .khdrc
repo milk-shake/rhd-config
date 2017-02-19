@@ -1,0 +1,25 @@
+khd kwm on
+
+
+# toggle between modes
+alt - up                    :   khd -e "mode activate swap"
+swap - space                :   khd -e "mode activate default"
+
+# swap mode
+swap - left                 :   kwmc window -s west
+swap - down                 :   kwmc window -s south
+swap - up                   :   kwmc window -s north
+swap - right                :   kwmc window -s east
+swap - m                    :   kwmc window -s mark
+
+swap + alt - left           :   kwmc tree rotate 270
+swap + alt - right          :   kwmc tree rotate 90
+
+swap + cmd + alt - up       :   kwmc window -c expand 0.02 south
+swap + cmd + alt - down     :   kwmc window -c reduce 0.02 south
+swap + cmd - up             :   kwmc window -c expand 0.02 north
+swap + cmd - down           :   kwmc window -c reduce 0.02 north
+swap + cmd + alt - left     :   kwmc window -c expand 0.02 west
+swap + cmd + alt - right    :   kwmc window -c reduce 0.02 west
+swap + cmd - right          :   kwmc window -c expand 0.02 east
+swap + cmd - left           :   kwmc window -c reduce 0.02 east
